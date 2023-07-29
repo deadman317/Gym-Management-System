@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Responsive Website Using Html, CSS & JavaScript</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="#" class="logo">FIT<B>Fusion</B></a>
+        <ol>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#pricing">pricing</a></li>
+            <li><a href="#contact">contact</a></li>
+            <div class="action">
+                <div class="profile"></div>
+                <div class="menu">
+                    <h3 class="account-details"></h3>
+                    <ul class="s">
+                        <li>
+                            <i class="fa-regular fa-user"></i><a href="#" id="profileButton">My profile</a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#" id="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ol>
+    </div>
+
+    <!-- Popup profile tab -->
+    <div class="popup" id="profilePopup">
+        <div class="popup-content">
+            <div class="profile">
+                <h2>User Profile</h2>
+                <div class="profile-image"></div>
+                <div class="details"></div>
+
+                <!-- Subscription Data -->
+                <h3>Subscription Information</h3>
+                <h5>You are not a member.</h5>
+                <!-- End of Subscription Data -->
+
+                <button class="close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- home section -->
+    <section class="home view" id="home">
+        <div class="highlights">
+            <h3>Feel The Power With</h3>
+            <h1><b>FIT</b>Fusion</h1><br>
+            <p class="tagline">Your Ultimate Fitness Destination</p>
+        </div>
+        <div class="banner"></div>
+    </section>
+
+    <!-- about section -->
+    <section class="about view" id="about">
+        <div class="main">
+            <h2><span>A</span>bout Us</h2>
+            <h6>Welcome to FitFusion - Where Fitness Meets Fun!</h6>
+        </div>
+        <div class="content">
+            <div class="cols">
+                <p><b>At</b> FitFusion, we believe in transforming lives through fitness. Our state-of-the-art gym and
+                    experienced trainers are here to help you achieve your health and wellness goals. Whether you are
+                    a
+                    beginner or a fitness enthusiast, we have the perfect workout plan for you. Join us today and
+                    experience a fusion of fitness routines that will keep you motivated and energized.</p>
+                <a href="#">more</a>
+            </div>
+            <div class="cols">
+                <div class="box">
+                    <img src="../img/About.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- pricing section -->
+    <section id="pricing" class="pricing view">
+        <div class="main">
+            <h2><span>B</span>est <span>P</span>rice</h2>
+            <h6>Choose a Plan that Fits Your Fitness Journey</h6>
+        </div>
+
+        <div class="content">
+            <div class="frame">
+                <div class="box">
+                    <h2>Basic</h2>
+                    <h4><span>1</span></h4>
+                    <h3><span>M</span>onths</h3>
+                    <br>
+                    <h3><span>$</span> 499</h3>
+                </div>
+                <a href="#">BUY</a>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <h2>Standard</h2>
+                    <h4><span>3</span></h4>
+                    <h3><span>M</span>onths</h3>
+                    <br>
+                    <h3><span>$</span> 1349</h3>
+                </div>
+                <a href="#">BUY</a>
+            </div>
+
+            <div class="frame">
+                <div class="box">
+                    <h2>Premium</h2>
+                    <h4><span>6</span></h4>
+                    <h3><span>M</span>onths</h3>
+                    <br>
+                    <h3><span>$</span> 2499</h3>
+                </div>
+                <a href="#">BUY</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section id="contact" class="contact view">
+        <div class="main">
+            <h2><span>C</span>ontact</h2>
+            <h4>We'd love to hear from you! Get in touch with us.</h4>
+        </div>
+
+        <div class="content">
+            <form id="contact-form">
+                <input type="text" placeholder="User" id="c-user">
+                <input type="email" placeholder="Email" id="c-email">
+                <textarea placeholder="Write your message here..." rows="5" id="c-text"></textarea>
+                <br>
+                <input type="submit" value="Send" class="btn">
+            </form>
+            <div class="bgimg"></div>
+        </div>
+    </section>
+
+    <!-- copy right -->
+    <section class="copyright">
+        &copy; Copyright <a href="#">FitFusion</a> 2023 | All Rights Reserved
+    </section>
+
+    <!-- JavaScript code -->
+    <script type="module" src="../scripts/user-script.js"></script>
+    <script type="module" src="../scripts/auth.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Responsive Website Using Html, CSS & JavaScript</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="#" class="logo">F<B>A</B>.</a>
+        <ol>
+            <li><a href="#" id="memberButton">Add Member</a></li>
+            <div class="action">
+                <div class="profile"></div>
+                <div class="menu">
+                    <h3 class="account-details"></h3>
+                    <ul class="s">
+                        <li>
+                            <i class="fa-solid fa-arrow-right-from-bracket"></i><a href="#" id="logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </ol>
+    </div>
+
+    <!-- Popup upgrade form -->
+    <div id="memberPopup" class="popup">
+        <div class="popup-content">
+            <h2>Add Member</h2>
+            <form id="upgradeForm">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" autocomplete="on" required>
+
+                <label for="planType">Select Plan Type:</label>
+                <select id="planType" name="planType" required>
+                    <option value="" disabled selected>Select a Plan</option>
+                    <option value="basic" data-price="10" data-duration="1">Basic Plan - $10/month</option>
+                    <option value="standard" data-price="20" data-duration="3">Standard Plan - $20/month (3 months)
+                    </option>
+                    <option value="premium" data-price="30" data-duration="6">Premium Plan - $30/month (6 months)
+                    </option>
+                </select>
+                <button type="submit" class="form-btn">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- user list -->
+    <section class="member view" id="member">
+        <div class="main">
+            <h2><span>M</span>embers <span>L</span>ist</h2>
+            <h6>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h6>
+        </div>
+        <div class="content">
+            <ul id="userList"></ul>
+        </div>
+    </section>
+
+    <!-- copy right -->
+    <section class="copyright">
+        &copy; copyright <a href="#">FA Gym</a> 2023 | All Rights Reserved
+    </section>
+
+    <!-- JavaScript code -->
+    <script type="module" src="../scripts/auth.js"></script>
+    <script type="module" src="../scripts/admin-script.js"></script>
+
+
+</body>
+
+</html>
